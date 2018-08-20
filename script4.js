@@ -1,9 +1,10 @@
-for (i = 0; i < 100; i++){
+for (i = 0; i < 10000; i++){
     var start = performance.now();
     setTimeout(function () {document.write("Do something")}, 1000);
     var finish = performance.now();
     var result = finish - start;
 
-    document.write(result);
+
+    console.log(result);
 }
 // }
